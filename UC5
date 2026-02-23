@@ -1,0 +1,25 @@
+/**
+ * OOPSBannerApp - UC5 Implementation
+ * Combining declaration and initialization for concise code.
+ * @author [Your Name]
+ * @version 5.0
+ */
+public class OOPSBannerApp {
+    public static void main(String[] args) {
+        // UC5: Inline array initialization with String.join()
+        String[] bannerLines = {
+            String.join("", "  *** ", "  *** ", "   **** ", " **** "),
+            String.join("", " *    *", " *    *","  *   *", " * "),
+            String.join("", " *    *", " *    *", " *   *", " * "),
+            String.join("", " *    *", " *    *", " **** ", " **** "),
+            String.join("", " *    *", " *    *", " * ", "       *"),
+            String.join("", " *    *", " *    *", " * ", "       *"),
+            String.join("", "  *** ", "   *** ", " * ", "     **** ")
+        };
+
+        // Efficient iteration remains the same
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
+    }
+}
