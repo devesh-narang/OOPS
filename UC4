@@ -1,0 +1,25 @@
+/**
+ * OOPSBannerApp - UC4 Implementation
+ * Using String arrays and loops for modularity and reusability.
+ * @author [Your Name]
+ * @version 4.0
+ */
+public class OOPSBannerApp {
+    public static void main(String[] args) {
+        // UC4: Organizing banner rows into a centralized data structure
+        String[] bannerLines = {
+            String.join("", "  *** ", "  *** ", " **** ", " **** "),
+            String.join("", " *    *", " *    *", "*   *", "* "),
+            String.join("", " *    *", " *    *", "*   *", "* "),
+            String.join("", " *    *", " *    *", "**** ", "*** "),
+            String.join("", " *    *", " *    *", "*    ", "   *"),
+            String.join("", " *    *", " *    *", "*    ", "   *"),
+            String.join("", "  *** ", "  *** ", "  *      "," **** ")
+        };
+
+        // Enhanced for-loop for clean, scalable output
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
+    }
+}
